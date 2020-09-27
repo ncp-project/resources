@@ -6,8 +6,8 @@ from pdf2image.exceptions import (
  PDFSyntaxError
 )
 
-images = convert_from_path('/home/bhanu/net-centric/resources/skew/skew11.pdf')
+images = convert_from_path('/home/bhanu/net-centric/resources/skew/')
 
 for i, image in enumerate(images):
     fname = 'image'+str(i)+'.png'
-    image.save(fname, "PNG")
+    image.save('/home/bhanu/net-centric/resources/skew/impdf/' + fname, "PNG")
