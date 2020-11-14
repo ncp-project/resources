@@ -13,13 +13,14 @@ from pdf2image.exceptions import (
  PDFSyntaxError
 )
 
-path = '/home/bhanu/net-centric/resources/skew'
+path = '/home/abhishekbvs/repo/Pratilipi/resources/skew'
 i = 0
-images = convert_from_path('/home/bhanu/net-centric/resources/skew/skew11.pdf')
+images = convert_from_path('/home/abhishekbvs/repo/Pratilipi/resources/skew/skew11.pdf')
 # convert the pdf into a series of images and save them
 for i, image in enumerate(images):
-    fname = 'image'+str(i)+'.png'
-    image.save(fname, "PNG")
+	print('1')
+	fname = 'image'+str(i)+'.png'
+	image.save(fname, "PNG")
 
 #search for images in the given path and deskew and save them
 for filename in os.listdir(path):

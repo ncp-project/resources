@@ -25,8 +25,8 @@ import socket
 import struct
 import charSegmentation
 import utils
-import keras.backend.tensorflow_backend as tfback
-
+# import keras.backend.tensorflow_backend as tfback
+print cv2.__version__
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 ############################################################################################################################## 
@@ -105,8 +105,7 @@ while(1):
 
     mser = cv2.MSER_create(_delta,_min_area,_max_area,_max_variation,_min_diversity,_max_evolution,_area_threshold,_min_margin,_edge_blur_size)
 
-    regions = mser.detectRegions(gray_scale)
-
+    regions = mser.detectRegions(gray_scale, None)
     out_image_2 = np.zeros(gray_scale.shape,dtype='uint8')
 
     bool_idx = []
