@@ -15,6 +15,7 @@ import threading
 import h5py
 from sklearn.utils import class_weight
 
+
 # With GPU
 with tf.device('/gpu:0'):
 

@@ -19,16 +19,18 @@ from PIL import Image
 from keras.models import load_model
 from keras.models import model_from_json
 import json
-from numpy.lib.stride_tricks import as_strided
+from numpy.lib.stride_tricks impor  t as_strided
 import json
 import socket
 import struct
 import charSegmentation
 import utils
 # import keras.backend.tensorflow_backend as tfback
-print cv2.__version__
+# print cv2.__version__
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+import keras
+print keras.__version__
 ############################################################################################################################## 
 # Model and some files loading part
 ############################################################################################################################## 
